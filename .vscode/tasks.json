@@ -1,0 +1,58 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "ts",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "type": "npm",
+      "script": "copy-static",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "run",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "sass",
+      "problemMatcher": [
+        "$node-sass"
+      ]
+    },
+    {
+      "type": "npm",
+      "script": "ts:w",
+      "problemMatcher": [
+        "$tsc-watch"
+      ],
+      "isBackground": true
+    },
+    {
+      "type": "npm",
+      "script": "sass:w",
+      "problemMatcher": [
+        "$node-sass"
+      ],
+      "isBackground": true
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "package",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "biolerplate-electron",
+  "version": "1.0.0",
+  "description": "Simple electron boilerplate",
+  "main": "dist/app.js",
+  "scripts": {
+    "ts": "tsc --pretty",
+    "ts:w": "tsc --watch --pretty",
+    "sass": "sass src/style:dist",
+    "sass:w": "sass src/style:dist --watch",
+    "copy-static": "ncp static dist",
+    "build": "npm run ts && npm run sass && npm run copy-static",
+    "prepackage": "npm run build",
+    "package": "electron-packager . --arch=x64 --platform=win32 --overwrite --ignore=src",
+    "prerun": "npm run build",
+    "run": "electron dist/app.js"
+  },
+  "keywords": [],
+  "author": "Xomps",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^14.2.1",
+    "ncp": "^2.0.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "electron": "^8.0.3",
+    "history": "^4.10.1",
+    "preact": "^10.3.3",
+    "preact-router": "^3.2.1",
+    "sass": "^1.26.2"
+  }
+}
