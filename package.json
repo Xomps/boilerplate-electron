@@ -25,7 +25,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "electron": "^8.0.3",
+    "electron": "^11.5.0",
     "history": "^4.10.1",
     "preact": "^10.3.3",
     "preact-router": "^3.2.1",
